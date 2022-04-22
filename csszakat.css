@@ -1,0 +1,166 @@
+*{
+    margin: auto;
+    padding:auto ;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.wrapper{
+    width: 100%;
+    margin: 0px;
+    position:static;
+}
+
+.logo a{
+    font-size: 40px;
+    font-weight: bold;
+    float: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #92A9BD;
+}
+
+.menu{
+    float: right;
+
+}
+
+nav{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: white;
+    z-index: 1;
+    border-bottom: 1px solid #92A9BD;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    float: left;
+}
+
+nav ul li a{
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+section{
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.kolom{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 15pt;
+    max-width: 75%;
+    grid-template-columns: repeat(2,1fr);
+    padding: 10px;
+
+}
+
+
+
+
+
+.h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    font-size: 50px;
+    margin-bottom: 20px;
+    color:#92A9BD ;
+    width: 100%;
+    line-height: 50px;
+}
+
+
+
+.grid{
+    margin: 80px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+    align-items: center;
+}
+
+.grid > article{
+    background: #eee5e9;
+    border: none;
+    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+    border-radius: 20px;
+    text-align: center;
+    width: 250px;
+    transition: transfrom .3s;
+}
+
+.grid > article:hover{
+    transform: translate(5px);
+    box-shadow: 2px 2px 26px 0px rgba(0,0,0,0.3);
+}
+
+.grid > article img{
+    width: 100px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.text{
+    padding:  0 20px 20px;
+}
+
+.text h3{
+    text-transform: uppercase;
+}
+
+.text button{
+    background: #ef6f6e;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+@media (max-width:768px){
+    .grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width:500px){
+    .grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .grid > article{
+        text-align: center;
+    }
+}
+
+
+
+
